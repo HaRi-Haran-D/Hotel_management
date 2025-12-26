@@ -1,8 +1,9 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render, HttpResponse
 from django.views.generic import ListView, FormView
 from .models import Room, Booking
 from .form import AvailabilityForm
 from myapp.booking_functions.availability import check_availability
+
 # Create your views here.
 class RoomList(ListView):
     model=Room
