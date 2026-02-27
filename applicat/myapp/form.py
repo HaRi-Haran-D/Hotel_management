@@ -1,4 +1,5 @@
 from django import forms
+
 class AvailabilityForm(forms.Form):
     ROOM_CATEGORIES = (
         ('YAC','AC'),
